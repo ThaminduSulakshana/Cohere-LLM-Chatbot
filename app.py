@@ -8,7 +8,7 @@ from PIL import Image
 co = cohere.Client('jiOXVoCCtYZHImJ8tTpTYhNfX8zCnlqhpAVVWGkW')
 
 # Set page configuration
-img = Image.open('E:\github\Cohere-LLM-Chatbot\static\images\logo.png')
+img = Image.open('static/images/logo.png')
 st.set_page_config(page_title='Cohere-LLM-Chatbot', page_icon=img)
 
 # HTML styling
@@ -38,7 +38,7 @@ if "messages" not in st.session_state:
 with st.sidebar:
     st.markdown("Welcome!!!")
     # Load image from local directory
-    sidebar_image = Image.open('E:/github/Cohere-LLM-Chatbot/static//images/logo.png')
+    sidebar_image = Image.open('static/images/logo.png')
     st.image(sidebar_image, width=150 , use_column_width=True)
     user_name = st.text_input("Tenancy_name", "atossyntelcloud")
     language = st.selectbox("Roles", ["Developer", "Architect", "Management People,Functional,Others"])
